@@ -1,0 +1,27 @@
+{
+    "name": "legacy-rust-syntax",
+    "displayName": "Legacy Rust Syntax",
+    "description": "Legacy Rust syntax highlighting",
+    "repository": "https://github.com/benesch/legacy-rust-syntax.git",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.50.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "rust",
+            "aliases": ["Rust", "rust"],
+            "extensions": [".rs"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "rust",
+            "scopeName": "source.rust",
+            "path": "./syntaxes/rust.tmLanguage.json"
+        }]
+    },
+    "publisher": "benesch"
+}
